@@ -1,0 +1,257 @@
+body{
+    background-color: #0A0A0A;
+    color: #f4f4f4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p{
+    max-width: 850px;
+    margin: 0 auto 1.5em auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+a{
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff1493;
+    text-decoration: underline;
+    text-shadow: 0px 4px 7px #c42f7f;
+}
+
+table, th, td{
+    border: 1px solid #a9a9a9;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th{
+    border: 1px solid #a9a9a9;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #171717;
+}
+
+td img {
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+td img:hover {
+  transform: scale(1.1);
+}
+
+tbody tr:hover {
+  background-color: #d1007034;
+  color: #f4f4f4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#main-header{
+    background-color: #171717;
+    color: #a9a9a9;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-header h1{
+    font-size: 2.5em;
+}
+
+#main-header h2{
+    font-size: 1.5em;
+}
+
+#main-nav{
+    background-color: #1f1d1d;
+    color: #a9a9a9;
+    text-align: center;
+    padding: 1px;
+}
+
+#main-nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+#main-nav li{
+    display: inline;
+    margin: 20px;
+}
+
+#main-table{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+#main-table th:nth-child(1){
+    width: 10px;
+    height: 10px;
+}
+
+#main-table th:nth-child(2){
+    width: 38%;
+}
+
+#main-table th:nth-child(5){
+    width: 27%;
+}
+
+#products-table{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#products-table th:nth-child(1){
+    width: 10px;
+    height: 10px;
+}
+
+#products-table th:nth-child(2){
+    width: 38%;
+}
+
+#products-table th:nth-child(4){
+    width: 27%;
+}
+
+#main-footer{
+    background-color: #171717;
+    color: #A9A9A9;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#main-footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+#main-footer li{
+    display: inline;
+    margin: 100px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-text{
+    text-align: left;
+}
+
+.header h1, .header h4{
+    margin: 0;
+    padding: 2px 0;
+}
+
+.hot{
+    max-width: 850px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.table-container {
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.album-cover {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tracklist {
+    position: absolute;
+    top: 0;
+    right: 105%;
+    width: 170px;
+    max-height: auto;
+    background-color: #d10070;
+    border: 1px solid #d10070;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    color: #a9a9a9;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    z-index: 99;
+}
+
+.tracklist h4 {
+    margin: 0 0 4px 0;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.tracklist ol {
+    margin: 0;
+    padding-left: 14px;
+    font-size: 0.55rem;
+    line-height: 1.2;
+}
+
+.album-cover:hover .tracklist {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
