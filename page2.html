@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Products | Mangoes' Album Store</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header id="main-header">
-            <div class="container header-container">
-                <a href="index.html"><img src="images/header.jpg" alt="Logo" class="logo"></a>               
-                
-                <div class="header-text">
-                    <h1>Mangoes' Album Store</h1>
-                    <h4><i>Your one-stop shop for all albums</i></h4>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Mangoes' Album Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="index.html"><img src="images/header.jpg" alt="Logo" class="logo"></a>               
+            <div class="header-text">
+                <h1>Mangoes' Album Store</h1>
+                <h4><i>Your one-stop shop for all albums</i></h4>
             </div>
-        </header>
-
+        </div>
+        
         <nav id="main-nav">
             <div class="container">
                 <ul>
@@ -28,26 +26,26 @@
                 </ul>
             </div>
         </nav>
-
-        <table id="products-table">
-            <div class="table-container">
-                <tr>
-                    <th colspan="5">POP ALBUMS</th>
-                </tr>
-
-                <tr>
-                    <th>Album Cover</th>
-                    <th>Album Title</th>
-                    <th>Artist</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-
-                <tr>
-                    <td>
+        
+        <div class="banner">
+            <div class="container">
+                <h3>Explore Our Full Catalog</h3>
+                <form>
+                    <input type="text" class="search-input" placeholder="Search by title, artist, or genre...">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <main class="cont">
+        <div class="catalog-section">
+            <h2 class="category-heading">POP ALBUMS</h2>
+            <div class="box">
+                <div class="columns">
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src = "images/products/pop1.png" alt = "Album Cover 1" width = "100" height = "100">
-
+                            <img src="images/products/pop1.png" alt="The Life of a Showgirl">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -62,22 +60,21 @@
                                     <li>Wood</li>
                                     <li>CANCELLED!</li>
                                     <li>Honey</li>
-                                    <li>The Life of a Showgirl (featuring Sabrina Carpenter)</li>
+                                    <li>The Life of a Showgirl (feat. Sabrina Carpenter)</li>
                                 </ol>
                             </div>
-                        </div>  
-                    </td>
-                    <td><a href="https://open.spotify.com/album/2k4FmEtXR0WiDW0Ac2QArT?si=ee7db071765b454a" target="_blank"><b>The Life of a Showgirl</b></a></td>
-                    <td>Taylor Swift</td>
-                    <td>A vibrant soft-pop and soft-rock record inspired by the euphoria of life on tour and finding contentment in romance, delivered with lavish, showgirl-themed theatricality.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        </div>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/2k4FmEtXR0WiDW0Ac2QArT?si=ee7db071765b454a" target="_blank">The Life of a Showgirl</a></h3>
+                            <p class="meta"><span class="artist">Taylor Swift</span> • <span class="genre">Pop</span></p>
+                            <p class="desc">A vibrant soft-pop and soft-rock record inspired by the euphoria of life on tour and finding contentment in romance, delivered with lavish, showgirl-themed theatricality.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
 
-                <tr>
-                    <td>
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src = "images/products/pop2.png" alt = "Album Cover 2" width = "100" height = "100">
-
+                            <img src="images/products/pop2.png" alt="Man's Best Friend">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -96,18 +93,17 @@
                                 </ol>
                             </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/1aqg30bNvLSWgShZgX4oop" target="_blank"><b>Man's Best Friend</b></a></td>
-                    <td>Sabrina Carpenter</td>
-                    <td>A sharp, playful pop and soft-rock project that blends country-pop touches with witty, subversive lyricism on modern romance and dynamics of control.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/1aqg30bNvLSWgShZgX4oop" target="_blank">Man's Best Friend</a></h3>
+                            <p class="meta"><span class="artist">Sabrina Carpenter</span> • <span class="genre">Pop</span></p>
+                            <p class="desc">A sharp, playful pop and soft-rock project that blends country-pop touches with witty, subversive lyricism on modern romance and dynamics of control.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
 
-                <tr>
-                    <td>
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src = "images/products/pop3.png" alt = "Album Cover 1" width = "100" height = "100">
-
+                            <img src="images/products/pop3.png" alt="you seem pretty sad for a girl so in love">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -115,7 +111,7 @@
                                     <li>stupid song</li>
                                     <li>honeybee</li>
                                     <li>maggots for brains</li>
-                                    <li>u + me = &lt3</li>
+                                    <li>u + me = &lt;3</li>
                                     <li>my way</li>
                                     <li>purple</li>
                                     <li>the cure</li>
@@ -127,18 +123,20 @@
                                 </ol>
                             </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl" target="_blank"><b>you seem pretty sad for a girl so in love</b></a></td>
-                    <td>Olivia Rodrigo</td>
-                    <td>A dream-pop and 1980s new-wave record that captures the bittersweet turbulence of romance through confessional songwriting and shimmering synth textures.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl" target="_blank">you seem pretty sad for a girl so in love</a></h3>
+                            <p class="meta"><span class="artist">Olivia Rodrigo</span> • <span class="genre">Pop</span></p>
+                            <p class="desc">A dream-pop and 1980s new-wave record that captures the bittersweet turbulence of romance through confessional songwriting and shimmering synth textures.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
+                </div>
 
-                <tr>
-                    <td>
+                <div class="columns">
+                    <!-- Pop 4 -->
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src="images/products/pop4.png" alt="Album Cover 1" width="100" height="100">
-
+                            <img src="images/products/pop4.png" alt="petal">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -157,18 +155,17 @@
                                 </ol>
                             </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/2k4FmEtXR0WiDW0Ac2QArT?si=ee7db071765b454a" target="_blank"><b>petal</b></a></td>
-                    <td>Ariana Grande</td>
-                    <td>An atmospheric pop and R&B exploration of subdued rage, emotional resilience, and breaking toxic attachments through lush, synth-driven soundscapes.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/2k4FmEtXR0WiDW0Ac2QArT?si=ee7db071765b454a" target="_blank">petal</a></h3>
+                            <p class="meta"><span class="artist">Ariana Grande</span> • <span class="genre">Pop</span></p>
+                            <p class="desc">An atmospheric pop and R&B exploration of subdued rage, emotional resilience, and breaking toxic attachments through lush, synth-driven soundscapes.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
 
-                <tr>
-                    <td>
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src = "images/products/pop5.png" alt = "Album Cover 2" width = "100" height = "100">
-
+                            <img src="images/products/pop5.png" alt="When the lights turn on">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -181,22 +178,21 @@
                                     <li>Shoes</li>
                                     <li>Your favorite flowers</li>
                                     <li>Learning to love</li>
-                                    <li>Can't keep crying</li>   
+                                    <li>Can't keep crying</li>
                                 </ol>
                             </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/25ilbvHuFozwjisTCEGyuR?si=EHot-hqrSCiP7mtj_w2_yA" target="_blank"><b>When the lights turn on</b></a></td>
-                    <td>MICO</td>
-                    <td>A punchy alt-pop and pop-punk debut exploring heartbreak, identity, and the uneasy feeling of outgrowing who you used to be.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/25ilbvHuFozwjisTCEGyuR?si=EHot-hqrSCiP7mtj_w2_yA" target="_blank">When the lights turn on</a></h3>
+                            <p class="meta"><span class="artist">MICO</span> • <span class="genre">Pop</span></p>
+                            <p class="desc">A punchy alt-pop and pop-punk debut exploring heartbreak, identity, and the uneasy feeling of outgrowing who you used to be.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
 
-                <tr>
-                    <td>
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src="images/products/pop6.png" alt="Album Cover 1" width="100" height="100">
-
+                            <img src="images/products/pop6.png" alt="The Romantics">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -212,34 +208,25 @@
                                 </ol>
                             </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/3ZN01xzenGMhWHdC5kfAe9?si=cRS8kMecQGCB2a1m0_wI3Q" target="_blank"><b>The Romantics</b></a></td>
-                    <td>Bruno Mars</td>
-                    <td>A silky-smooth, retro-infused blend of R&B, soul, and pop that delivers heartfelt romantic devotion, Latin-inspired grooves, and classic live-band musicianship.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/3ZN01xzenGMhWHdC5kfAe9?si=cRS8kMecQGCB2a1m0_wI3Q" target="_blank">The Romantics</a></h3>
+                            <p class="meta"><span class="artist">Bruno Mars</span> • <span class="genre">Pop</span></p>
+                            <p class="desc">A silky-smooth, retro-infused blend of R&B, soul, and pop that delivers heartfelt romantic devotion, Latin-inspired grooves, and classic live-band musicianship.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </table>
+        </div>
 
-        <table id="products-table">
-            <div class="table-container">
-                <tr>
-                    <th colspan="5">OPM Albums</th>
-                </tr>
-
-                <tr>
-                    <th>Album Cover</th>
-                    <th>Album Title</th>
-                    <th>Artist</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-
-                <tr>
-                    <td>
+        <div class="catalog-section">
+            <h2 class="category-heading">OPM ALBUMS</h2>
+            <div class="box">
+                <div class="columns">
+                    <!-- OPM 1 -->
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src="images/products/opm1.png" alt="Album Cover 1" width="100" height="100">
-
+                            <img src="images/products/opm1.png" alt="Wakas at Simula">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -249,12 +236,12 @@
                                     <li>Everblack</li>
                                     <li>Emoji</li>
                                     <li>Wakas</li>
-                                    <li>What? (Wakas at Simula)</li>
-                                    <li>MAPA (Wakas at Simula)</li>
-                                    <li>Mana (Wakas at Simula)</li>
-                                    <li>Bazinga (Wakas at Simula)</li>
-                                    <li>Ikako (Wakas at Simula)</li>
-                                    <li>SLMT (Wakas at Simula)</li>
+                                    <li>What?</li>
+                                    <li>MAPA</li>
+                                    <li>Mana</li>
+                                    <li>Bazinga</li>
+                                    <li>Ikako</li>
+                                    <li>SLMT</li>
                                     <li>GENTO</li>
                                     <li>I WANT YOU</li>
                                     <li>CRIMZONE</li>
@@ -270,18 +257,17 @@
                                 </ol>
                             </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/6PLZOVdjyDjbsuMMUdXJ7W" target="_blank"><b>Wakas at Simula</b></a></td>
-                    <td>SB19</td>
-                    <td>A monumental pop and hip-hop opus that serves as the culmination of the group's conceptual EP trilogy, celebrating artistic evolution, closure, and new horizons.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/6PLZOVdjyDjbsuMMUdXJ7W" target="_blank">Wakas at Simula</a></h3>
+                            <p class="meta"><span class="artist">SB19</span> • <span class="genre">OPM</span></p>
+                            <p class="desc">A monumental pop and hip-hop opus that serves as the culmination of the group's conceptual EP trilogy, celebrating artistic evolution, closure, and new horizons.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
 
-                <tr>
-                    <td>
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src = "images/products/opm2.png" alt = "Album Cover 4" width = "100" height = "100">
-                        
+                            <img src="images/products/opm2.png" alt="KOLORCOASTER">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -296,19 +282,22 @@
                                     <li>Abelyana</li>
                                     <li>ROYGBIV</li>
                                 </ol>
+                            </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/1LbK9faGw5Fn3WiX4NoA5a?si=hiMToTyWT2CjLJXlHLeUxQ" target="_blank"><b>KOLORCOASTER</b></a></td>
-                        <td>Maki</td>
-                    <td>A vibrant Filipino pop and indie-alternative concept album using color theory to narrate the shifting spectrum of modern love and vulnerability.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/1LbK9faGw5Fn3WiX4NoA5a?si=hiMToTyWT2CjLJXlHLeUxQ" target="_blank">KOLORCOASTER</a></h3>
+                            <p class="meta"><span class="artist">Maki</span> • <span class="genre">OPM</span></p>
+                            <p class="desc">A vibrant Filipino pop and indie-alternative concept album using color theory to narrate the shifting spectrum of modern love and vulnerability.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
+                </div>
 
-                <tr>
-                    <td>
+                <div class="columns">
+                    <!-- OPM 3 -->
+                    <div class="album-card">
                         <div class="album-cover">
-                            <img src = "images/products/opm3.png" alt = "Album Cover 5" width = "100" height = "100">
-                        
+                            <img src="images/products/opm3.png" alt="Silakbo">
                             <div class="tracklist">
                                 <h4>Tracklist:</h4>
                                 <ol>
@@ -323,25 +312,28 @@
                                     <li>Hinga</li>
                                     <li>Silakbo</li>
                                 </ol>
+                            </div>
                         </div>
-                    </td>
-                    <td><a href="https://open.spotify.com/album/2WOyuTsNHF90SryrS3kmIN?si=258d83c2ef4048fb" target="_blank"><b>Silakbo</b></a></td>
-                    <td>Cup of Joe</td>
-                    <td>A cathartic pop-rock debut structured around the five stages of grief, capturing raw heartache and emotional growth.</td>
-                    <td>PHP 499.99</td>
-                </tr>
+                        <div class="album-info">
+                            <h3><a href="https://open.spotify.com/album/2WOyuTsNHF90SryrS3kmIN?si=258d83c2ef4048fb" target="_blank">Silakbo</a></h3>
+                            <p class="meta"><span class="artist">Cup of Joe</span> • <span class="genre">OPM</span></p>
+                            <p class="desc">A cathartic pop-rock debut structured around the five stages of grief, capturing raw heartache and emotional growth.</p>
+                            <p class="price">PHP 499.99</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </table>
-        
-        <footer id="main-footer">
-            <div class="socials">
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-        </footer>
+        </div>
+    </main>
 
-    </body>
+    <footer id="main-footer">
+        <div class="socials">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>
